@@ -12,6 +12,11 @@
   /*color: var(--colorDark);*/
 }
 
+@font-face {
+  font-family: localFutura;
+  src: url('fonts/Futura.ttc');
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -33,7 +38,7 @@
 
 body {
   opacity: 0;
-  font-family: Futura, Arial;
+  font-family: Futura, localFutura, Arial;
   color: black;
   animation: fadeIn .5s ease-in .5s 1 forwards;
   background-color: white;
@@ -126,7 +131,6 @@ body, html {
   background-size: cover;
 }
 
-
 aside {
   flex: 15%;
   /*background-color: var(--color2);*/
@@ -138,7 +142,7 @@ aside {
   flex: 70%;
 }
 
-.sectioncontainer section{
+.sectioncontainer section {
   padding: 50px;
   animation: fadeInUp .5s ease-in-out .5s 1;
 }

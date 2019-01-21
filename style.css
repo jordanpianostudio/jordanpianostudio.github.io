@@ -75,13 +75,14 @@ nav {
 
 nav a {
   padding: 20px 20px;
-  color:black;
+  color: white;
   text-decoration: none;
   text-align: center;
   animation: fadeInUp .5s ease-in-out .5s 1;
   transition-property: opacity, color;
   transition-duration: .2s, .2s;
   transition-timing-function: ease-in-out;
+  font-size: 1.25em;
 }
 
 nav:hover a {
@@ -123,15 +124,6 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.parallax.one{
-  /* The image used */
-  background-image: url("piano.jpg");
-}
-
-.parallax.two{
-  background-image: url("piano2.jpg");
 }
 
 

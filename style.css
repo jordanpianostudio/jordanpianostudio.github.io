@@ -257,6 +257,10 @@ iframe {
     font-size: 3vh;
   }
 
+  .parallax_back {
+    transform: translateZ(-1px) scale(2);
+  }
+
   .square {
     height: 250px;
     width: 250px;

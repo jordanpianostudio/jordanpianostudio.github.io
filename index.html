@@ -76,7 +76,7 @@
       </main>
     </div>
 
-    <div id="group3"class="parallax__group">
+    <div id="group3" class="parallax__group">
       <div class="parallax_back parallax_layer"></div>
     </div>
 
@@ -131,44 +131,44 @@
   </video>
 !-->
 
-<script type="text/javascript">
-  var isTwice = function(a, element) {
-    for (var i = 0; i <= a.length; i++) {
-      for (var j = i; j <= a.length; j++) {
-        if (i != j && a[i] == a[j]) {
-          if (a[i] == element) {
-            return true;
+  <script type="text/javascript">
+    var isTwice = function(a, element) {
+      for (var i = 0; i <= a.length; i++) {
+        for (var j = i; j <= a.length; j++) {
+          if (i != j && a[i] == a[j]) {
+            if (a[i] == element) {
+              return true;
+            }
           }
         }
       }
-    }
-    return false;
-  }
-
-
-
-  function randomImage(numberOfImage) {
-    var theImages = document.getElementsByClassName('parallax_back');
-    var imgDir = 'images/';
-
-    var imgIndex = [];
-    for (i = 0; i < theImages.length; i++) {
-      imgIndex[i] = 0;
+      return false;
     }
 
-    for (i = 0; i < imgIndex.length; i++) {
-      do {
-        imgIndex[i] = Math.floor(Math.random() * numberOfImage);
+
+
+    function randomImage(numberOfImage) {
+      var theImages = document.getElementsByClassName('parallax_back');
+      var imgDir = 'images/';
+
+      var imgIndex = [];
+      for (i = 0; i < theImages.length; i++) {
+        imgIndex[i] = 0;
       }
-      while (isTwice(imgIndex, imgIndex[i]));
-    }
-    for (i = 0; i < theImages.length; i++) {
-      theImages[i].style.backgroundImage = "url('" + imgDir + "piano" + imgIndex[i] + ".jpg')";
-    }
-  }
 
-  randomImage(11);
-</script>
+      for (i = 0; i < imgIndex.length; i++) {
+        do {
+          imgIndex[i] = Math.floor(Math.random() * numberOfImage);
+        }
+        while (isTwice(imgIndex, imgIndex[i]));
+      }
+      for (i = 0; i < theImages.length; i++) {
+        theImages[i].style.backgroundImage = "url('" + imgDir + "piano" + imgIndex[i] + ".jpg')";
+      }
+    }
+
+    randomImage(11);
+  </script>
 
 </body>
 

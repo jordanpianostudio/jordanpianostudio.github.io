@@ -232,6 +232,10 @@ iframe {
     height: 250px;
     width: 250px;
   }
+
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 #myVideo {

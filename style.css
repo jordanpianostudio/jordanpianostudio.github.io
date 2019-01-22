@@ -37,7 +37,7 @@
 
 body {
   opacity: 0;
-  font-family: Futura, localFutura, Arial;
+  font-family: Futura, localFutura, Helvetica, Arial, sans-serif;
   color: black;
   animation: fadeIn .5s ease-in .5s 1 forwards;
   background-color: white;

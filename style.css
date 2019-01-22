@@ -59,6 +59,24 @@ header a {
   display: block;
 }
 
+.backtotop {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: black;
+  z-index: 20;
+  text-decoration: none;
+}
+
+.backtotop:hover {
+  color: var(--color1);
+}
+
+.backtotop::after {
+  content: "\2227";
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -110,13 +128,13 @@ nav a:hover {
 
 .parallax__group {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   transform-style: preserve-3d;
 }
 
 .resizable_parallax_group {
   position: relative;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .parallax_layer {
@@ -141,25 +159,14 @@ nav a:hover {
   z-index: 9;
 }
 
-/* #group1{
-  z-index: -1;
+.groupbackground {
+  z-index: 9;
 }
 
-#group2{
-  z-index: -2;
+.groupforeground {
+  z-index: 10;
 }
 
-#group3{
-  z-index: -3;
-}
-
-#group4{
-  z-index: -4;
-}
-
-#group5{
-  z-index: -5;
-} */
 main {
   display: flex;
   flex-wrap: wrap;

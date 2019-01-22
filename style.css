@@ -116,6 +116,7 @@ nav a:hover {
 
 .resizable_parallax_group {
   position: relative;
+  z-index: 10;
 }
 
 .parallax_layer {

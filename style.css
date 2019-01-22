@@ -9,7 +9,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /*color: var(--colorDark);*/
 }
 
 @font-face {
@@ -26,7 +25,6 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    /*-webkit-transform: translate3d(0, 100%, 0);*/
     transform: translate3d(0, 100%, 0);
   }
 
@@ -58,18 +56,6 @@ p {
 
 header a {
   display: block;
-}
-
-header img {
-  display: block;
-  margin: auto;
-  width: 10%;
-  filter: invert(0%);
-  transition: filter 0.5s ease-in-out;
-}
-
-header img:hover {
-  filter: invert(100%);
 }
 
 nav {
@@ -111,24 +97,66 @@ nav a:hover {
   animation: fadeInUp .5s ease-in-out .5s 1;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  /*z-index: 1;*/
-}
-
 body, html {
-  height: 100%;
+  overflow: hidden;
 }
 
 .parallax {
-  /* Full height */
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax_base {
+  transform: translateZ(0);
+  z-index: 10;
+}
+
+.parallax_back {
+  transform: translateZ(-1px) scale(2);
+  /* background-image: url('images/piano1.jpg'); */
   background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+
+/* #group1{
+  z-index: -1;
+}
+
+#group2{
+  z-index: -2;
+}
+
+#group3{
+  z-index: -3;
+}
+
+#group4{
+  z-index: -4;
+} */
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  /*z-index: 1;*/
 }
 
 aside {
@@ -143,7 +171,7 @@ aside {
 }
 
 .sectioncontainer section {
-  padding: 50px;
+  padding: 90px;
   animation: fadeInUp .5s ease-in-out .5s 1;
 }
 
@@ -206,16 +234,25 @@ iframe {
     display: none;
   }
 
+  .title {
+    font-size: 10vh;
+  }
+
   h1 {
-    font-size: 1.5em;
+    font-size: 5vh;
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 3vh;
   }
 
   p {
-    font-size: .6em;
+    font-size: 2vh;
+  }
+
+  nav a {
+    padding: 15px 15px;
+    font-size: 3vh;
   }
 
   .square {

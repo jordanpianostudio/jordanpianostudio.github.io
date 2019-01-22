@@ -132,6 +132,7 @@ nav a:hover {
   /* background-image: url('images/piano1.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   z-index: 9;
 }
 
@@ -258,7 +259,7 @@ iframe {
   }
 
   .parallax_back {
-    transform: translateZ(0px) scale(1);
+    transform: translateZ(-1px) scale(2);
   }
 
   .square {

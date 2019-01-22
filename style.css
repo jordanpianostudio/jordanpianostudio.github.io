@@ -258,7 +258,7 @@ iframe {
   }
 
   .parallax_back {
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(0px) scale(1);
   }
 
   .square {

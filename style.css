@@ -98,10 +98,9 @@ nav a:hover {
   animation: fadeInUp .5s ease-in-out .5s 1;
 }
 
-body, html {
+/* body, html {
   overflow: hidden;
-}
-
+} */
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -170,8 +169,16 @@ aside {
 }
 
 .sectioncontainer section {
-  padding: 90px;
+  padding: 90px 30px;
   animation: fadeInUp .5s ease-in-out .5s 1;
+}
+
+section h1+p {
+  padding-top: 10px;
+}
+
+p:last-child {
+  padding-bottom: 10px;
 }
 
 article {
@@ -221,10 +228,6 @@ iframe {
 }
 
 @media screen and (max-width: 700px) {
-  header img {
-    width: 50%;
-  }
-
   nav {
     flex-direction: column;
   }

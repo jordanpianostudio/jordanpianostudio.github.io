@@ -44,11 +44,15 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 p {
@@ -114,7 +118,7 @@ nav a:hover {
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   letter-spacing: 10px;
   color: white;
   animation: fadeInUp .5s ease-in-out .5s 1;
@@ -199,10 +203,24 @@ section h2 {
 }
 
 section p {
-  padding-top: 10px;
   padding-bottom: 10px;
   line-height: 2;
+}
+
+ul {
   margin: 10px 0;
+}
+
+li {
+  line-height: 2;
+}
+
+h1+p {
+  padding-top: 10px;
+}
+
+h2+h3 {
+  margin-top: 10px;
 }
 
 section i {
@@ -222,7 +240,7 @@ img.star {
 #review p {
   font-style: italic;
   line-height: 1.6;
-  margin:0;
+  margin: 0;
 }
 
 #review span {
@@ -348,6 +366,10 @@ input[type=submit]:hover {
   }
 
   h2 {
+    font-size: 3.5vh;
+  }
+
+  h3 {
     font-size: 3vh;
   }
 

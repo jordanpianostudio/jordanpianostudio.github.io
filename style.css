@@ -393,8 +393,7 @@ a.clickheretoemail {
   /********************/
   .parallax {
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: visible;
     perspective: none;
   }
 

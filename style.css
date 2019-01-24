@@ -351,6 +351,10 @@ input[type=submit]:hover {
   background-color: black;
 }
 
+a.clickheretoemail {
+  color: var(--color1);
+}
+
 @media screen and (max-width: 700px) {
   nav {
     flex-direction: column;

@@ -177,7 +177,7 @@ nav a:hover {
   z-index: 10;
 }
 
-main {
+.responsive {
   display: flex;
   flex-wrap: wrap;
   background-color: white;

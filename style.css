@@ -293,6 +293,7 @@ article {
 iframe {
   height: 250px;
   width: 390px;
+  border: none;
   /*border-radius: 15px;*/
 }
 

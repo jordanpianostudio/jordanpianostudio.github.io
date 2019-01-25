@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Jordan Piano Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="GxKpFItmGzXjn-Q5ju5Bx-l4GAraakyrjy5RBtYHhJY" />
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Jordan, professeur de piano à Strasbourg." />
+  <!--<link rel="shortcut icon" type="image/png" href="favicon.png">!-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+  nav a {
+    color: var(--color1);
+  }
+  nav a:hover {
+    color: var(--color3);
+  }
+</style>
+
+<body>
+  <main>
+    <header>
+      <nav><a href="https://jordanpianostudio.github.io">ACCUEIL DU SITE</a></nav>
+    </header>
+
+    <div class="responsive">
+      <aside>
+      </aside>
+
+      <div class="sectioncontainer">
+
+        <section id="review">
+          <h1>Laisser un avis</h1>
+          <form id="reviewform" name="reviewform" action="https://formspree.io/jordanpianostudio@outlook.com" method="POST">
+            <input type="hidden" name="_subject" value="New review from website" />
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required="required">
+            <div><label for="radio">Note sur 5</label></div>
+            <label><input type="radio" name="grade" value="zero" required="required">0</label>
+            <label><input type="radio" name="grade" value="one">1</label>
+            <label><input type="radio" name="grade" value="two">2</label>
+            <label><input type="radio" name="grade" value="three">3</label>
+            <label><input type="radio" name="grade" value="four">4</label>
+            <label><input type="radio" name="grade" value="five">5</label>
+
+            <div><label for="message">Message</label></div>
+            <textarea id="message" name="message" required="required" placeholder="Ecrivez ici..."></textarea>
+            <input type="submit" name="submit" value="Envoyer">
+          </form>
+          <a class="clickheretoemail" href="mailto:jordanpianostudio@outlook.com">Si vous n'arrivez pas à laisser un avis via le formulaire ci-dessus, cliquez ici.</a>
+        </section>
+
+      </div>
+      <aside>
+      </aside>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

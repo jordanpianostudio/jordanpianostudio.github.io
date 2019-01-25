@@ -298,7 +298,7 @@ iframe {
   /*border-radius: 15px;*/
 }
 
-#contactform {
+#contactform, #reviewform {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -348,12 +348,20 @@ input[type=submit] {
   font-size: 1em;
 }
 
+input[type=radio] {
+  margin: 10px 10px;
+}
+
 input[type=submit]:hover {
   background-color: black;
 }
 
 a.clickheretoemail {
   color: var(--color1);
+}
+
+a.clickheretoemail:hover {
+  color: var(--color3);
 }
 
 @media screen and (max-width: 700px) {
